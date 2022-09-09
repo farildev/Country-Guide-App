@@ -21,4 +21,30 @@ html{
     background-color: #fff;
     width: 600px;
     padding: 2rem;
+    border-radius: 7px;
+}
+.wrapper .search-zone{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .search-zone input{
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #3d64e6;
+    width: 65%;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.wrapper .search-zone button{
+    background-color: #3d64e6;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
 }
