@@ -37,6 +37,7 @@ html{
     padding: 0.8em 0;
     border: none;
     border-radius: 1.5em;
+    cursor: pointer;
 }
 .search-wrapper input{
     font-size: 1em;
