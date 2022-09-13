@@ -1,8 +1,8 @@
-let seacrhBtn = document.getElementById("search-btn");
-let countryInput = document.getElementById("country-input");
+let seacrhBtn = document.querySelector("#search-btn");
+let countryInput = document.querySelector("#country-input");
 
 seacrhBtn.addEventListener("click" , () => {
-    let countryName = countryInput.value('');
+    let countryName = countryInput.value;
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     fetch(finalURL)
     .then((response) => response.json())
@@ -36,10 +36,13 @@ seacrhBtn.addEventListener("click" , () => {
         </div>
         `;
     })
-    .catch(() => {
-        if(countryName.length == 0) {
-            result.innerHTML = `<h3>Input the field cannot be empty</h3>`
+     .catch(() => {
+         if(countryName.length == 0) {
+             result.innerHTML = `<h3>Input the field cannat be empty!</h3>`
         }
-    })
+        else{
+            result.innerHTML = `<h3>Enter a valid country name!</h3>`
+        }
+     })
 });
 

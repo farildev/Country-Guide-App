@@ -80,3 +80,8 @@ html{
 .container span{
     color: #5d6274;
 }
+#result h3{
+    color: red;
+    margin-top: 1rem;
+    font-weight: 400;
+}
